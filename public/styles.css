@@ -5,7 +5,18 @@
 footer {
     display: grid;
     grid-template-columns: 50% 50%;
-    background-color: yellow;
+    background-color: #5837D0;
+    
+}
+
+.bg {
+    background-color: rgba(49,8,123,0.4);
+}
+.bga {
+    background-color: rgba(70, 21, 161, 0.2);
+}
+.bgaa {
+    background-color: rgba(49,8,123,0.5);
 }
 
 .item2 {
@@ -18,6 +29,7 @@ footer {
 
 }
 
+
 .item3 {
     display: flex;
     flex-direction: row;
@@ -25,24 +37,24 @@ footer {
     flex-wrap: wrap;
     align-items:flex-start;
     padding: 50px;
+}
 
-}
-.k {
-    background-color: yellow;
-}
 
 .child3>* {
     list-style-type: none;
     margin: 20px 40px;
+    font-family: "PT Serif", serif;
 }
 .first {
     list-style-type: none;
     margin: 20px 0;
 }
 
-.j{
-    background-color: blue;
+li {
+    list-style-type : none;
 }
+
+
 
 .item1 {
     display: flex;
@@ -67,6 +79,50 @@ footer {
     padding: 0;
 }
 
-a:link{
+a{
     text-decoration: none;
+    font-size: large;
+    color: white;
+}
+
+/* Home styling */
+
+.section1{
+    margin-bottom: 30px;
+}
+
+.hovers {
+    background-color: #e7ac2d;
+    position: relative;
+    width: 50%;
+    left:50%;
+    height: 700px;
+}
+
+.slides {
+    position: absolute;
+    right: 95%;
+    bottom: 7%;
+}
+
+.hovers1 {
+    position: relative;
+    width: 70%;
+    left: 20%;
+    top : 20%
+}
+.hovers h2 {
+    margin: 20px;
+    font-family: "PT Serif", serif;
+    color: #001253;
+}
+
+.hovers button {
+    background-color: #001253;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.hovers h2:hover{
+    text-decoration: underline;
 }

@@ -1,4 +1,62 @@
 <%- include("header") %>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
+<section class="section1">
 
+    <div class="hovers">
+        <ul class="hovers1">
+            <li id="0"><h2>Community Impact</h2></li> 
+            <li id="1"><h2>Health & Wellness</h2></li>
+            <li id="2"><h2>Technology and Science</h2></li>
+            <li id="3"><h2>Arts & Humanities</h2></li>
+            <li id="4"><h2>Diversity, Equity & Inclusion</h2></li>
+            <li id="5"><h2>Global Engagement</h2></li>
+            <li id="6"><h2>Innovation & Research</h2></li>
+            <button class=""><a href="">Learn More on PittWire</a></button>
+        </ul>
+
+        <div class="slides">
+            <div>
+                <img src="https://www.pitt.edu/sites/default/files/styles/stacked_card_image/public/2021-07/goldstack-community.jpg?h=04d92ac6&itok=Hr7g1uYS" >
+            </div>
+            <div>
+                <img src="https://www.pitt.edu/sites/default/files/styles/stacked_card_image/public/2021-07/goldstack-health-wellness.jpg?h=04d92ac6&itok=hKUohhom" >
+            </div>
+            <div>
+                <img src="https://www.pitt.edu/sites/default/files/styles/stacked_card_image/public/2021-07/goldstack-technology-science.jpg?h=04d92ac6&itok=IHS_drep" >
+            </div>
+            <div>
+                <img src="https://www.pitt.edu/sites/default/files/styles/stacked_card_image/public/2021-07/goldstack-humanities.jpg?h=04d92ac6&itok=EV_d-LAw" >
+            </div>
+            <div>
+                <img src="https://www.pitt.edu/sites/default/files/styles/stacked_card_image/public/2021-07/goldstack-diversity-equity.jpg?h=04d92ac6&itok=453Thqci" >
+            </div>
+            <div>
+                <img src="https://www.pitt.edu/sites/default/files/styles/stacked_card_image/public/2021-07/goldstack-global.jpg?h=04d92ac6&itok=5c89SlSl" >
+            </div>
+            <div>
+                <img src="https://www.pitt.edu/sites/default/files/styles/stacked_card_image/public/2021-07/goldstack-innovation.jpg?h=04d92ac6&itok=aegrjWC-" >
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+<!-- DOM manipulation for slide show -->
+<script>
+    slideIndex= 0;
+    displayImage(slideIndex);
+
+    $(".hovers li").mouseover(Hover)
+
+    function Hover(event) {
+      displayImage(this.id)
+  }  
+
+    function displayImage(n) {
+      $(".slides img").css("display", "none");
+    
+      $(".slides img").eq(n).css("display", "block");
+  }
+</script>
 
 <%- include("footer") %> 
